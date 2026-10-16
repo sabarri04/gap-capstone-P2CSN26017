@@ -1,0 +1,25 @@
+{
+  "questions": [
+    {
+      "question": "What is the origin and reputation of source IP 185.72.34.21?",
+      "why_it_matters": "Establishing origin and reputation may help determine whether the login warrants escalation.",
+      "evidence_needed": "IP reputation results, VPN authentication logs, geolocation, and threat-intelligence records.",
+      "related_known_fact": "All three recorded events use source IP 185.72.34.21.",
+      "priority": "High"
+    },
+    {
+      "question": "Was employee01 authorized to access FinanceServer at 02:16?",
+      "why_it_matters": "Comparing access with approved permissions can establish whether the server activity was expected.",
+      "evidence_needed": "Access-control lists, identity-provider logs, role assignments, and server audit logs.",
+      "related_known_fact": "The incident records an access event to FinanceServer for the same account and source IP.",
+      "priority": "High"
+    },
+    {
+      "question": "Which process or session accessed salary_data.xlsx after the VPN login?",
+      "why_it_matters": "Tracing the session may clarify whether sensitive data was accessed beyond the initial login.",
+      "evidence_needed": "File audit logs, endpoint telemetry, VPN session identifiers, and proxy records.",
+      "related_known_fact": "A file_access event for salary_data.xlsx follows the VPN login in the incident timeline.",
+      "priority": "Medium"
+    }
+  ]
+}

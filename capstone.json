@@ -1,0 +1,6 @@
+{
+  "sample_input": "samples/inputs/sample_ok.json",
+  "injected_input": "samples/inputs/sample_injected.json",
+  "floor_item_6": "documents",
+  "ui_command": "streamlit run app.py"
+}

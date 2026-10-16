@@ -1,0 +1,12 @@
+.env
+run_log.jsonl
+security_log.jsonl
+.stub_calls.log
+.sentinel_uploaded_incident.json
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+Thumbs.db
