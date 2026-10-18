@@ -1,0 +1,14 @@
+{
+  "incident_id": "INC-004",
+  "incident_type": "Approved Administrative Maintenance",
+  "user_account": "admin01",
+  "events": [
+    {
+      "timestamp": "2026-10-17 22:00:00",
+      "event_type": "admin_change",
+      "source_ip": "192.0.2.40",
+      "resource": "FinanceServer",
+      "details": "Scheduled maintenance approved under change ticket CHG-1042."
+    }
+  ]
+}
