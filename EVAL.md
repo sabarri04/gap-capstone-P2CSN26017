@@ -1,6 +1,6 @@
 # Sentinel Evaluation Report
 
-## 1. What this set covers
+##  What this set covers
 
 This evaluation examines Sentinel's evidence-grounded cybersecurity investigation-question generation pipeline using synthetic incident records. The test cases cover ordinary suspicious activity, prompt injection, an unusual login with successful multi-factor authentication (MFA), approved administrative maintenance, malformed or empty input, and invalid model responses.
 
@@ -8,7 +8,7 @@ Real-model evaluation used `openai/gpt-oss-20b` through the configured Groq-comp
 
 
 
-## 2. The rows
+##  The rows
 
 | # | Kind | Input / test case | What must be true | Result |
 |---|---|---|---|---|
@@ -21,7 +21,7 @@ Real-model evaluation used `openai/gpt-oss-20b` through the configured Groq-comp
 
 **Result interpretation:** The real-model rows record the observed outcomes from the four reported calls. For rows 5 and 6, retain the checker result only after confirming it against the test output. Expected behavior alone is not proof that a test passed.
 
-## 3. Metrics
+##  Metrics
 
 The following measurements were recorded for four successful real-model calls in `run_log.jsonl`.
 
@@ -55,7 +55,7 @@ A formatting defect was observed in some output, with words occasionally running
 
 No formal accuracy percentage is claimed because the evaluation does not yet have a complete human-reviewed scoring rubric and labelled ground-truth answers.
 
-## 5. Known failures
+##  Known failures
 
 The following are specific failure modes or limitations to investigate. **Do not label a failure as reproduced unless you have a corresponding test row and observed output.** For each item, record the row number and actual result after running the relevant test.
 
@@ -91,7 +91,7 @@ Repeated calls may produce different wording or evidence suggestions. A fixed ev
 
 The UI does not provide full user authentication or role-based access control. It should not be treated as a production system for sensitive incident data without appropriate access controls and deployment protections.
 
-## 6. What this set does not cover
+##  What this set does not cover
 
 These tests do not prove that Sentinel blocks every prompt injection, detects every cyberattack, or generates forensically correct questions in every situation. Four real-model calls are a small sample, and synthetic records do not represent the full complexity of real incidents.
 
